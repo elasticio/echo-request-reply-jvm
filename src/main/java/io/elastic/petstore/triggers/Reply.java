@@ -4,7 +4,6 @@ import io.elastic.api.ExecutionParameters;
 import io.elastic.api.Function;
 import io.elastic.api.Message;
 import io.elastic.api.HttpReply;
-import io.elastic.api.LoggerFactory;
 import io.elastic.api.JSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +20,7 @@ import java.io.ByteArrayInputStream;
  * Trigger to get pets by status.
  */
 public class Reply implements Function {
-    private static final Logger logger = LoggerFactory.getLogger(GetPetsByStatus.class);
+    private static final Logger logger = LoggerFactory.getLogger(Reply.class);
 
     /**
      * @param parameters execution parameters
