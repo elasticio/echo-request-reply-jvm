@@ -16,9 +16,6 @@ import javax.json.JsonString;
 import java.io.ByteArrayInputStream;
 
 
-/**
- * Trigger to get pets by status.
- */
 public class Reply implements Function {
     private static final Logger logger = LoggerFactory.getLogger(Reply.class);
 
