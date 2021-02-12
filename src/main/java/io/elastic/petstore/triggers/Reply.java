@@ -12,6 +12,8 @@ import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.JsonString;
 
+import java.io.ByteArrayInputStream;
+
 
 /**
  * Trigger to get pets by status.
