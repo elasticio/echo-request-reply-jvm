@@ -1,6 +1,8 @@
 {
   "title": "Request Reply Trigger (Java)",
   "description": "elastic.io component for the Petstore API",
+  "service": "request-reply",
+  "buildType": "docker",
   "triggers": {
     "reply": {
       "main": "io.elastic.reply.triggers.Reply",
