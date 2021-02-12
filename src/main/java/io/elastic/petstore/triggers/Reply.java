@@ -4,6 +4,8 @@ import io.elastic.api.ExecutionParameters;
 import io.elastic.api.Function;
 import io.elastic.api.Message;
 import io.elastic.api.HttpReply;
+import io.elastic.api.LoggerFactory;
+import io.elastic.api.JSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
