@@ -16,7 +16,7 @@ import javax.json.JsonString;
 import java.io.ByteArrayInputStream;
 
 import java.lang.Thread;
-
+import java.lang.InterruptedException;
 
 public class Reply implements Function {
     private static final Logger logger = LoggerFactory.getLogger(Reply.class);
