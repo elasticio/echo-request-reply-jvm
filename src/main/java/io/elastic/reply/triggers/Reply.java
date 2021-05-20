@@ -28,7 +28,7 @@ public class Reply implements Function {
     public void execute(final ExecutionParameters parameters) {
 	try {
 		Thread.sleep(40);
-	} catch (e InterruptedException) {
+	} catch (InterruptedException e) {
 	}
 
         final JsonObject body = Json.createObjectBuilder()
