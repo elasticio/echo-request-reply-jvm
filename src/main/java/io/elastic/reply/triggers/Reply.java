@@ -15,9 +15,6 @@ import javax.json.JsonString;
 
 import java.io.ByteArrayInputStream;
 
-import java.lang.Thread;
-import java.lang.InterruptedException;
-
 public class Reply implements Function {
     private static final Logger logger = LoggerFactory.getLogger(Reply.class);
 
@@ -26,11 +23,6 @@ public class Reply implements Function {
      */
     @Override
     public void execute(final ExecutionParameters parameters) {
-	try {
-		Thread.sleep(40);
-	} catch (InterruptedException e) {
-	}
-
         final JsonObject body = Json.createObjectBuilder()
                 .add("echo", parameters.getMessage().getBody())
                 .build();
