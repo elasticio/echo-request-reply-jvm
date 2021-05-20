@@ -26,7 +26,10 @@ public class Reply implements Function {
      */
     @Override
     public void execute(final ExecutionParameters parameters) {
-	Thread.sleep(40);
+	try {
+		Thread.sleep(40);
+	} catch (e InterruptedException) {
+	}
 
         final JsonObject body = Json.createObjectBuilder()
                 .add("echo", parameters.getMessage().getBody())
