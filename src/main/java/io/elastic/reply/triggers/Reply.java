@@ -37,8 +37,9 @@ public class Reply implements Function {
                 .status(HttpReply.Status.ACCEPTED)
                 .content(new ByteArrayInputStream(JSON.stringify(body).getBytes()))
                 .build();
-
-	Thread.sleep(40);
+	try {
+		Thread.sleep(40);
+	} (InterruptedException e) {}
         //logger.info("Emitting data");
 
         // emitting the message to the platform
