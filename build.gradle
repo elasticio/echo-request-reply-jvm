@@ -31,7 +31,7 @@ repositories {
 }
 
 dependencies {
-    compile "io.elastic:sailor-jvm:3.3.5"
+    compile "io.elastic:sailor-jvm:3.3.6-SNAPSHOT"
 }
 
 uploadArchives {
