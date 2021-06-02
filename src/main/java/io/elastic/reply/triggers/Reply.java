@@ -40,7 +40,7 @@ public class Reply implements Function {
                 .build();
 	try {
 		Thread.sleep(40);
-	} (InterruptedException e) {
+	} catch (InterruptedException e) {
 		logger.error(e);
 	}
         //logger.info("Emitting data");
