@@ -41,7 +41,7 @@ public class Reply implements Function {
 	try {
 		Thread.sleep(40);
 	} catch (InterruptedException e) {
-		logger.error(e);
+		logger.error("Interrupted");
 	}
         //logger.info("Emitting data");
 
