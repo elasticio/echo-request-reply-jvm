@@ -15,6 +15,8 @@ import javax.json.JsonString;
 
 import java.io.ByteArrayInputStream;
 
+import java.lang.Thread;
+
 public class Reply implements Function {
     private static final Logger logger = LoggerFactory.getLogger(Reply.class);
 
@@ -36,10 +38,11 @@ public class Reply implements Function {
                 .content(new ByteArrayInputStream(JSON.stringify(body).getBytes()))
                 .build();
 
-        logger.info("Emitting data");
+	Thread.sleep(40);
+        //logger.info("Emitting data");
 
         // emitting the message to the platform
-        parameters.getEventEmitter().emitData(data);
+        //parameters.getEventEmitter().emitData(data);
 
 
         logger.info("Emitting reply");
