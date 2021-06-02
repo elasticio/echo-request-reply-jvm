@@ -16,6 +16,7 @@ import javax.json.JsonString;
 import java.io.ByteArrayInputStream;
 
 import java.lang.Thread;
+import java.lang.InterruptedException;
 
 public class Reply implements Function {
     private static final Logger logger = LoggerFactory.getLogger(Reply.class);
@@ -39,7 +40,9 @@ public class Reply implements Function {
                 .build();
 	try {
 		Thread.sleep(40);
-	} (InterruptedException e) {}
+	} (InterruptedException e) {
+		logger.error(e);
+	}
         //logger.info("Emitting data");
 
         // emitting the message to the platform
