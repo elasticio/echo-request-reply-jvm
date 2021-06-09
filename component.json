@@ -1,6 +1,6 @@
 {
-  "title": "Request Reply Trigger (Java)",
-  "description": "elastic.io component for the Petstore API",
+  "title": "Echo Request Reply Trigger (Java)",
+  "description": "Component for rquest-reply performance tests. Just echoes incoming message with latency.",
   "service": "request-reply",
   "buildType": "docker",
   "triggers": {
